@@ -57,11 +57,13 @@
       </li>
       <li class="onboardingListItem">
         <div class="onboardingListItem__layout">
-          <p><span class="onboardingPhone">
-            <span class="onboardingPhone__layout">
-              <?php include 'svg/sample-screen.svg'; ?>
+          <p>
+            <span class="onboardingPhone" aria-hidden="true">
+              <span class="onboardingPhone__layout">
+                <?php include 'svg/sample-screen.svg'; ?>
+              </span>
             </span>
-          </span></p>
+          </p>
           <p>
             Get a page that displays the buses expected right now at the stops you use. <strong>Bookmark it for one-click access!</strong>
           </p>

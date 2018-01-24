@@ -2,6 +2,7 @@
   version="1.1" x="0" y="0"
   viewBox="0 0 245 320"
   class="sampleScreenSVG"
+  role="img"
 >
   <rect class="sampleScreenSVG__segment--accent" width="245" height="320"/>
   <path class="sampleScreenSVG__segment--dark" d="M182.7 170.8H62.8c-3.5 0-6.8 2.7-6.8 6.2v91.2c0 3.5 3.3 6.7 6.8 6.7h1.6V287c0 3.5 3.3 6.6 6.8 6.6h5.4c3.5 0 6.4-3.1 6.4-6.6v-12.1h79.3V287c0 3.5 3 6.6 6.5 6.6h5.4c3.5 0 6.7-3.1 6.7-6.6v-12.1h1.7c3.5 0 6.2-3.2 6.2-6.7V177C189 173.5 186.2 170.8 182.7 170.8z"/>

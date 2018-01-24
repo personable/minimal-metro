@@ -1,6 +1,7 @@
 <svg
   class="busSVG"
   xmlns="http://www.w3.org/2000/svg"
+  role="img"
   version="1.1" x="0" y="0" viewBox="0 0 300 300">
   <title>PM (afternoon bus)</title>
   <path class="busSVG__background" d="M285.9 12H15.3C7.4 12 0 18.1 0 26v205.9c0 7.9 7.4 15.1 15.3 15.1H19v27.2c0 7.9 7.5 14.8 15.4 14.8h12.1c7.9 0 14.4-6.9 14.4-14.8V247h179v27.2c0 7.9 6.8 14.8 14.7 14.8h12.1c7.9 0 15.2-6.9 15.2-14.8V247h3.9c7.9 0 14.1-7.2 14.1-15.1V26C300 18.1 293.8 12 285.9 12z"/>
