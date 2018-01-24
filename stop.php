@@ -33,8 +33,10 @@
     </div>
   </form>
   <footer class="onboarding__footer">
-    &copy;<?php echo date("Y"); ?> Personable Design.&nbsp;&nbsp;<a class="link--light" href="m&#97;ilto&#58;c&#37;6&#56;r&#105;s&#64;pe&#37;72so&#110;a&#37;62led&#101;s&#105;&#103;%6E&#46;co&#37;&#54;D">Contact me</a>&nbsp;with questions or problems.
+    &copy;<?php echo date("Y"); ?> Personable Design&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="link--light" href="m&#97;ilto&#58;c&#37;6&#56;r&#105;s&#64;pe&#37;72so&#110;a&#37;62led&#101;s&#105;&#103;%6E&#46;co&#37;&#54;D">Contact me</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="link--light" href="https://github.com/personable/minimal-metro">Github</a>
   </footer>
-
 </body>
 </html>
