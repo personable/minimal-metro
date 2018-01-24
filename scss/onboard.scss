@@ -1,0 +1,366 @@
+@import "vars";
+@import "breakpoints";
+
+body {
+  text-align: center;
+  background-color: $color-brand;
+
+  @include breakpoint(tablet) {
+    background-image: url("../img/background.png");
+    background-size: 42rem;
+  }
+
+  @include breakpoint(desktop) {
+    display: grid;
+    grid-template-rows: 8.5rem 1fr 2.5rem;
+    background-size: 58rem;
+  }
+}
+
+.onboarding__header {
+  padding: 1rem;
+}
+
+.onboarding__headline {
+  margin: 0;
+  line-height: 1;
+}
+
+.onboardingList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: onboardingList;
+
+  @include breakpoint(desktop) {
+    height: 100%;
+
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.onboardingListItem {
+  position: relative;
+  padding: 0;
+  padding: 2rem 1.5rem;
+  background: $color-dark;
+  color: white;
+
+  @include breakpoint(desktop) {
+    display: flex;
+    align-items: center;
+  }
+
+  @include breakpoint(wide) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  &:nth-child(even) {
+    background: white;
+    color: $color-dark;
+
+    &::before {
+      box-shadow: 0 0 0 0.5rem white;
+    }
+  }
+
+  &::before {
+    counter-increment: onboardingList;
+    content: counter(onboardingList);
+    font-family: $font-display;
+    background: $color-brand;
+    color: white;
+    border-radius: 100%;
+    font-size: 2rem;
+    line-height: 3.25rem;
+    min-width: 3.25rem;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    top: -1.625rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0 0 0 0.5rem $color-dark;
+  }
+}
+
+.onboardingListItem__layout {
+  flex: 1;
+  max-width: 27rem;
+  margin: 0 auto;
+
+  @include breakpoint(desktop) {
+    max-width: 32rem;
+  }
+}
+
+$inputHeight: 3rem;
+$busSize: $inputHeight * 2.25;
+
+.onboardingInput {
+  position: relative;
+  margin: 0 0 1.5rem;
+}
+
+.onboardingInput__label,
+.onboardingInput__input {
+  display: block;
+}
+
+.onboardingInput__label {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+  position: relative;
+  text-transform: uppercase;
+  color: $color-delay;
+  letter-spacing: 0.0625rem;
+}
+
+.onboardingInput__input {
+  width: 100%;
+  font-family: $font-display;
+  position: relative;
+  text-align: center;
+
+  &:focus {
+    ~ .onboardingInputBus {
+      transform: translate3d(0, 0, 0) scale(1.15);
+      background: $color-brand;
+
+      .busSVG__background {
+        fill: $color-dark;
+      }
+
+      .busSVG__foreground {
+        fill: white;
+      }
+
+      .busSVG__text {
+        fill: $color-brand;
+      }
+    }
+
+    ~ .onboardingInput__background {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.onboardingInput__background {
+  display: block;
+  position: absolute;
+  bottom: -0.125rem;
+  right: 0;
+  width: 100%;
+  height: 0.5rem;
+  opacity: 0;
+  transition: 0.2s all;
+  transform: scale(0.5);
+  background: $color-brand;
+}
+
+.onboarding__footer {
+  color: white;
+  padding: 1rem;
+  font-size: 0.75rem;
+
+  @include breakpoint(tablet) {
+    line-height: 1;
+  }
+}
+
+.onboardingInputBus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+  transform: translate3d(0, 0, 0) scale(1);
+  background: white;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0.5rem rgba(black, 0.1);
+}
+
+.busSVG {
+  display: block;
+  width: 1em;
+  height: 1em;
+  font-size: 3.5rem;
+}
+
+.busSVG__foreground {
+  fill: white;
+}
+
+.busSVG__background,
+.busSVG__text {
+  fill: $color-dark;
+}
+
+.onboardingSMTT {
+  overflow: hidden;
+  max-width: 15rem;
+  margin: 1.5rem auto 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.75rem;
+}
+
+.onboardingSMTT__logo {
+  background: #554D93;
+  padding: 0.75rem;
+}
+
+.onboardingSMTT__SVG {
+  fill: white;
+  display: block;
+  margin: 0 auto;
+  width: 66%;
+}
+
+.onboardingSMTT__stopID {
+  font-family: $font-display;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  line-height: 1;
+  height: 3rem;
+}
+
+.onboardingSMTT__stopIDnumber,
+.onboardingSMTT__stopIDtext {
+  flex: 0 0 50%;
+  padding: 0 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.onboardingSMTT__stopIDtext {
+  color: $color-dark;
+  background: white;
+  font-size: 1.25rem;
+}
+
+@keyframes numberHighlight {
+  to {
+    opacity: 1;
+    transform: translate3d(-50%, -52%, 0) scale(1.1);
+  }
+}
+
+.onboardingSMTT__stopIDnumber {
+  background: $color-dark;
+  color: white;
+  font-size: 1.75rem;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0.125rem solid $color-low;
+    border-radius: 9999rem;
+    width: 70%;
+    height: 90%;
+    transform: translate3d(-50%, -52%, 0) scale(0.95);
+    opacity: 0;
+    animation-name: numberHighlight;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 8;
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+.onboardingPhone {
+  display: inline-block;
+  width: 4rem;
+  height: 6.5rem;
+  background: white;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2);
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, -0.25rem, 0);
+    box-shadow: inset 0 0 0 0.125rem darken($color-lightBg, 5%);
+    border-radius: 100%;
+  }
+}
+
+.onboardingPhone__layout {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 3.5rem;
+  height: 5rem;
+  border-radius: 0.125rem;
+}
+
+.sampleScreenSVG {
+  width: 1em;
+  height: 1em;
+  font-size: 5rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.sampleScreenSVG__segment--accent {
+  fill: $color-low;
+}
+
+.sampleScreenSVG__segment--light {
+  fill: white;
+}
+
+.sampleScreenSVG__segment--dark {
+  fill: $color-dark;
+}
+
+.logoSVG {
+  width: 15.5rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.logoSVG__minimal {
+  fill: white;
+
+  @include breakpoint(desktop) {
+    fill: $color-dark;
+  }
+}
+
+.logoSVG__metro {
+  fill: $color-dark;
+
+  @include breakpoint(desktop) {
+    fill: white;
+  }
+}

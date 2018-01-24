@@ -1,0 +1,69 @@
+{
+	"bustime-response": {
+		"routes": [
+			{
+				"rt": "BRZ",
+				"rtnm": "METRO BREEZ",
+				"rtclr": "#c8c8c8",
+				"rtdd": "BRZ",
+				"rtpidatafeed": "Metro"
+			},
+			{
+				"rt": "1",
+				"rtnm": "Congress Street",
+				"rtclr": "#c8c8c8",
+				"rtdd": "1",
+				"rtpidatafeed": "Metro"
+			},
+			{
+				"rt": "2",
+				"rtnm": "Riverton",
+				"rtclr": "#c8c8c8",
+				"rtdd": "2",
+				"rtpidatafeed": "Metro"
+			},
+			{
+				"rt": "4",
+				"rtnm": "Westbrook",
+				"rtclr": "#c8c8c8",
+				"rtdd": "4",
+				"rtpidatafeed": "Metro"
+			},
+			{
+				"rt": "5",
+				"rtnm": "Maine Mall",
+				"rtclr": "#c8c8c8",
+				"rtdd": "5",
+				"rtpidatafeed": "Metro"
+			},
+			{
+				"rt": "7",
+				"rtnm": "Falmouth",
+				"rtclr": "#c8c8c8",
+				"rtdd": "7",
+				"rtpidatafeed": "Metro"
+			},
+			{
+				"rt": "8",
+				"rtnm": "Peninsula Loop",
+				"rtclr": "#c8c8c8",
+				"rtdd": "8",
+				"rtpidatafeed": "Metro"
+			},
+			{
+				"rt": "9A",
+				"rtnm": "North Deering via Stevens Ave",
+				"rtclr": "#c8c8c8",
+				"rtdd": "9A",
+				"rtpidatafeed": "Metro"
+			},
+			{
+				"rt": "9B",
+				"rtnm": "North Deering via Washington Ave",
+				"rtclr": "#c8c8c8",
+				"rtdd": "9B",
+				"rtpidatafeed": "Metro"
+			}
+		]
+	}
+}

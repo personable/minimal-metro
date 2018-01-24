@@ -1,0 +1,384 @@
+{
+	"bustime-response": {
+		"stops": [
+			{
+				"stpid": "38",
+				"stpnm": "BEDFORD ST + 35 BEDFORD ST",
+				"lat": 43.662285,
+				"lon": -70.274525999999
+			},
+			{
+				"stpid": "45",
+				"stpnm": "BRIDGE ST + CUMBERLAND ST",
+				"lat": 43.688085999999,
+				"lon": -70.361488999999
+			},
+			{
+				"stpid": "48",
+				"stpnm": "BRIDGE ST + FALMOUTH ST",
+				"lat": 43.686441000001,
+				"lon": -70.362918000001
+			},
+			{
+				"stpid": "61",
+				"stpnm": "BRIGHTON AVE + 335 BRIGHTON AVE",
+				"lat": 43.665534000001,
+				"lon": -70.291680999999
+			},
+			{
+				"stpid": "84",
+				"stpnm": "BRIGHTON AVE + BEACON ST",
+				"lat": 43.664033000001,
+				"lon": -70.286410000001
+			},
+			{
+				"stpid": "79",
+				"stpnm": "BRIGHTON AVE + BELFIELD ST",
+				"lat": 43.667203,
+				"lon": -70.297221999998
+			},
+			{
+				"stpid": "62",
+				"stpnm": "BRIGHTON AVE + CABOT ST",
+				"lat": 43.674514,
+				"lon": -70.321013
+			},
+			{
+				"stpid": "58",
+				"stpnm": "BRIGHTON AVE + CITY HOSPITAL DR",
+				"lat": 43.676027999999,
+				"lon": -70.325771000001
+			},
+			{
+				"stpid": "66",
+				"stpnm": "BRIGHTON AVE + DENNETT ST",
+				"lat": 43.672879999999,
+				"lon": -70.313457000001
+			},
+			{
+				"stpid": "69",
+				"stpnm": "BRIGHTON AVE + EDGEWORTH AVE",
+				"lat": 43.669812,
+				"lon": -70.304283
+			},
+			{
+				"stpid": "75",
+				"stpnm": "BRIGHTON AVE + FALMOUTH ST",
+				"lat": 43.661617000001,
+				"lon": -70.278247000001
+			},
+			{
+				"stpid": "444",
+				"stpnm": "BRIGHTON AVE + MONTROSE AVE",
+				"lat": 43.668414000001,
+				"lon": -70.300508999999
+			},
+			{
+				"stpid": "67",
+				"stpnm": "BRIGHTON AVE + NOYES ST",
+				"lat": 43.66343,
+				"lon": -70.284337000002
+			},
+			{
+				"stpid": "74",
+				"stpnm": "BRIGHTON AVE + PITT ST",
+				"lat": 43.662548999999,
+				"lon": -70.281425000001
+			},
+			{
+				"stpid": "85",
+				"stpnm": "BRIGHTON AVE + STEVENS AVE",
+				"lat": 43.666476999999,
+				"lon": -70.295059999999
+			},
+			{
+				"stpid": "86",
+				"stpnm": "BRIGHTON AVE + TAFT AVE",
+				"lat": 43.675063000001,
+				"lon": -70.323362999999
+			},
+			{
+				"stpid": "88",
+				"stpnm": "BRIGHTON AVE + WARWICK ST",
+				"lat": 43.673859,
+				"lon": -70.317309
+			},
+			{
+				"stpid": "89",
+				"stpnm": "BRIGHTON AVE + WAYSIDE RD",
+				"lat": 43.671294,
+				"lon": -70.308247000001
+			},
+			{
+				"stpid": "96",
+				"stpnm": "BROWN ST + BRIDGE ST",
+				"lat": 43.678820000001,
+				"lon": -70.367496000001
+			},
+			{
+				"stpid": "98",
+				"stpnm": "BROWN ST + KING ST",
+				"lat": 43.680751,
+				"lon": -70.361842
+			},
+			{
+				"stpid": "103",
+				"stpnm": "BROWN ST + WALKER ST",
+				"lat": 43.680216000001,
+				"lon": -70.364656
+			},
+			{
+				"stpid": "1117",
+				"stpnm": "CONGRESS ST + CENTER ST",
+				"lat": 43.656861,
+				"lon": -70.25977899999901
+			},
+			{
+				"stpid": "191",
+				"stpnm": "CUMBERLAND ST + 299 CUMBERLAND ST",
+				"lat": 43.688085999999,
+				"lon": -70.359774000001
+			},
+			{
+				"stpid": "192",
+				"stpnm": "CUMBERLAND ST + BROWN ST",
+				"lat": 43.683674999999,
+				"lon": -70.353637
+			},
+			{
+				"stpid": "322",
+				"stpnm": "CUMBERLAND ST + HARNOIS AVE",
+				"lat": 43.682513999999,
+				"lon": -70.349793000001
+			},
+			{
+				"stpid": "196",
+				"stpnm": "CUMBERLAND ST + PARK RD",
+				"lat": 43.686744,
+				"lon": -70.357729000001
+			},
+			{
+				"stpid": "251",
+				"stpnm": "FOREST AVE + CONGRESS ST",
+				"lat": 43.654894000001,
+				"lon": -70.262883999999
+			},
+			{
+				"stpid": "262",
+				"stpnm": "FOREST AVE + KENNEBEC ST",
+				"lat": 43.659226,
+				"lon": -70.267293000002
+			},
+			{
+				"stpid": "298",
+				"stpnm": "HANNAFORD DR + 5 HANNAFORD DR",
+				"lat": 43.676386999999,
+				"lon": -70.355148999999
+			},
+			{
+				"stpid": "351",
+				"stpnm": "HARNOIS AVE + MAIN ST",
+				"lat": 43.681745999999,
+				"lon": -70.350793999999
+			},
+			{
+				"stpid": "305",
+				"stpnm": "IDEXX DR + EISENHOWER DR",
+				"lat": 43.662624999999,
+				"lon": -70.374931000002
+			},
+			{
+				"stpid": "344",
+				"stpnm": "MAIN ST + 389 MAIN ST",
+				"lat": 43.681304000001,
+				"lon": -70.346669999999
+			},
+			{
+				"stpid": "345",
+				"stpnm": "MAIN ST + 741 MAIN ST",
+				"lat": 43.676907,
+				"lon": -70.361343
+			},
+			{
+				"stpid": "341",
+				"stpnm": "MAIN ST + 795 MAIN ST",
+				"lat": 43.676395000001,
+				"lon": -70.363996999999
+			},
+			{
+				"stpid": "323",
+				"stpnm": "MAIN ST + DEER HILL AVE",
+				"lat": 43.679499000001,
+				"lon": -70.341503999999
+			},
+			{
+				"stpid": "814",
+				"stpnm": "MAIN ST + DUNN ST",
+				"lat": 43.677503,
+				"lon": -70.359677
+			},
+			{
+				"stpid": "330",
+				"stpnm": "MAIN ST + LIZA HARMON DR",
+				"lat": 43.678190000001,
+				"lon": -70.335851999999
+			},
+			{
+				"stpid": "331",
+				"stpnm": "MAIN ST + LOCUST ST",
+				"lat": 43.680049000001,
+				"lon": -70.353314999998
+			},
+			{
+				"stpid": "333",
+				"stpnm": "MAIN ST + MASON ST",
+				"lat": 43.680496000001,
+				"lon": -70.344443
+			},
+			{
+				"stpid": "335",
+				"stpnm": "MAIN ST + RIVERBANK PARK",
+				"lat": 43.678421,
+				"lon": -70.357681000001
+			},
+			{
+				"stpid": "486",
+				"stpnm": "MAIN ST + RIVERSIDE ST",
+				"lat": 43.677382999999,
+				"lon": -70.330745999999
+			},
+			{
+				"stpid": "347",
+				"stpnm": "MAIN ST + VALLEE SQUARE",
+				"lat": 43.677019000001,
+				"lon": -70.368318000001
+			},
+			{
+				"stpid": "353",
+				"stpnm": "MAIN ST + YORK ST",
+				"lat": 43.678605999999,
+				"lon": -70.338619
+			},
+			{
+				"stpid": "476",
+				"stpnm": "MECHANIC ST + PROSPECT ST",
+				"lat": 43.670048,
+				"lon": -70.371053
+			},
+			{
+				"stpid": "339",
+				"stpnm": "MECHANIC ST + QUIMBY AVE",
+				"lat": 43.675717,
+				"lon": -70.369234
+			},
+			{
+				"stpid": "483",
+				"stpnm": "MECHANIC ST + WEST VALENTINE ST",
+				"lat": 43.673106999999,
+				"lon": -70.370047
+			},
+			{
+				"stpid": "387",
+				"stpnm": "MYRTLE ST + BRIDGE ST",
+				"lat": 43.684865999999,
+				"lon": -70.363975999999
+			},
+			{
+				"stpid": "100",
+				"stpnm": "MYRTLE ST + BROWN ST",
+				"lat": 43.681520999999,
+				"lon": -70.360098000002
+			},
+			{
+				"stpid": "390",
+				"stpnm": "MYRTLE ST + PRINCE ST",
+				"lat": 43.683957,
+				"lon": -70.362419
+			},
+			{
+				"stpid": "399",
+				"stpnm": "OXFORD ST + ALDER ST",
+				"lat": 43.658663000001,
+				"lon": -70.262516
+			},
+			{
+				"stpid": "407",
+				"stpnm": "PARK AVE + DEERING AVE",
+				"lat": 43.656245,
+				"lon": -70.273705000001
+			},
+			{
+				"stpid": "404",
+				"stpnm": "PARK AVE + GILMAN ST",
+				"lat": 43.655767,
+				"lon": -70.279107000002
+			},
+			{
+				"stpid": "406",
+				"stpnm": "PARK AVE + HIGH ST",
+				"lat": 43.65745,
+				"lon": -70.266983000001
+			},
+			{
+				"stpid": "409",
+				"stpnm": "PARK AVE + MELLEN ST",
+				"lat": 43.656707,
+				"lon": -70.271048000001
+			},
+			{
+				"stpid": "412",
+				"stpnm": "PARK AVE + STATE ST",
+				"lat": 43.657185,
+				"lon": -70.268499
+			},
+			{
+				"stpid": "413",
+				"stpnm": "PARK AVE + WEYMOUTH ST",
+				"lat": 43.655738000001,
+				"lon": -70.276499
+			},
+			{
+				"stpid": "421",
+				"stpnm": "PORTLAND ST + FOREST AVE",
+				"lat": 43.657819,
+				"lon": -70.266012
+			},
+			{
+				"stpid": "441",
+				"stpnm": "PROSPECT ST + SACO ST",
+				"lat": 43.670278999999,
+				"lon": -70.372782999999
+			},
+			{
+				"stpid": "372",
+				"stpnm": "PULSE",
+				"lat": 43.658464,
+				"lon": -70.259672999999
+			},
+			{
+				"stpid": "484",
+				"stpnm": "QUIMBY AVE + SACO ST",
+				"lat": 43.676088999999,
+				"lon": -70.371412999999
+			},
+			{
+				"stpid": "479",
+				"stpnm": "SACO ST + 345 SACO ST",
+				"lat": 43.664884000001,
+				"lon": -70.376522
+			},
+			{
+				"stpid": "497",
+				"stpnm": "ST JOHN ST + 325 ST JOHN ST",
+				"lat": 43.654297000001,
+				"lon": -70.279690999998
+			},
+			{
+				"stpid": "647",
+				"stpnm": "TERI CIR + PROSPECT ST",
+				"lat": 43.669264999999,
+				"lon": -70.367119000002
+			}
+		]
+	}
+}

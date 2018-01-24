@@ -1,0 +1,17 @@
+$color-brand: darken(#3889fa, 3%);
+$color-dark: #222;
+$color-lightBg: #f2f2f2;
+$color-low: #2fbd48;
+$color-medium: #f7963d;
+$color-high: #f74b3d;
+$color-delay: lighten($color-dark, 25%);
+
+$header-height: 3rem;
+$bus-width: 13rem;
+$bus-padding: 1rem;
+$bus-borderRadius: 0.5rem;
+$bus-wheel-height: 2.5rem;
+$ticker-width: $bus-width - ($bus-padding * 2);
+
+$font-bold: 'AvenirNext-Bold', sans-serif-black, sans-serif;
+$font-display: 'AvenirNextCondensed-Heavy', sans-serif-black, sans-serif;

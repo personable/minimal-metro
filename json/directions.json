@@ -1,0 +1,14 @@
+{
+	"bustime-response": {
+		"directions": [
+			{
+				"id": "INBOUND",
+				"name": "INBOUND"
+			},
+			{
+				"id": "OUTBOUND",
+				"name": "OUTBOUND"
+			}
+		]
+	}
+}

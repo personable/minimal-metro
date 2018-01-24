@@ -1,0 +1,336 @@
+{
+	"bustime-response": {
+		"stops": [
+			{
+				"stpid": "81",
+				"stpnm": "1072 BRIGHTON AVE",
+				"lat": 43.674746,
+				"lon": -70.323258
+			},
+			{
+				"stpid": "59",
+				"stpnm": "1124 BRIGHTON AVE",
+				"lat": 43.675754999999,
+				"lon": -70.325542
+			},
+			{
+				"stpid": "63",
+				"stpnm": "856 BRIGHTON AVE",
+				"lat": 43.672760999999,
+				"lon": -70.313594
+			},
+			{
+				"stpid": "39",
+				"stpnm": "BEDFORD ST + 34 BEDFORD ST",
+				"lat": 43.66259,
+				"lon": -70.273501000002
+			},
+			{
+				"stpid": "46",
+				"stpnm": "BRIDGE ST + CUMBERLAND ST",
+				"lat": 43.688265000001,
+				"lon": -70.361130999998
+			},
+			{
+				"stpid": "97",
+				"stpnm": "BRIDGE ST + DANA CT",
+				"lat": 43.678922,
+				"lon": -70.367076000001
+			},
+			{
+				"stpid": "47",
+				"stpnm": "BRIDGE ST + EVERETT ST",
+				"lat": 43.686834999999,
+				"lon": -70.362408
+			},
+			{
+				"stpid": "54",
+				"stpnm": "BRIGHTON AVE + 416 BRIGHTON AVE",
+				"lat": 43.666317,
+				"lon": -70.294987999999
+			},
+			{
+				"stpid": "55",
+				"stpnm": "BRIGHTON AVE + 460 BRIGHTON AVE",
+				"lat": 43.666933,
+				"lon": -70.296921000001
+			},
+			{
+				"stpid": "37",
+				"stpnm": "BRIGHTON AVE + BEDFORD ST",
+				"lat": 43.661096999999,
+				"lon": -70.277067999999
+			},
+			{
+				"stpid": "68",
+				"stpnm": "BRIGHTON AVE + BOLTON ST",
+				"lat": 43.664102000001,
+				"lon": -70.287167999999
+			},
+			{
+				"stpid": "64",
+				"stpnm": "BRIGHTON AVE + CRAIGIE ST",
+				"lat": 43.665388,
+				"lon": -70.291843
+			},
+			{
+				"stpid": "65",
+				"stpnm": "BRIGHTON AVE + DARTMOUTH ST",
+				"lat": 43.663210000001,
+				"lon": -70.284146000001
+			},
+			{
+				"stpid": "443",
+				"stpnm": "BRIGHTON AVE + FLEETWOOD ST",
+				"lat": 43.668553999999,
+				"lon": -70.301359000002
+			},
+			{
+				"stpid": "83",
+				"stpnm": "BRIGHTON AVE + KENWOOD ST",
+				"lat": 43.662321999999,
+				"lon": -70.281183
+			},
+			{
+				"stpid": "76",
+				"stpnm": "BRIGHTON AVE + LUCAS ST",
+				"lat": 43.671236000001,
+				"lon": -70.308520000002
+			},
+			{
+				"stpid": "77",
+				"stpnm": "BRIGHTON AVE + MACHIGONNE ST",
+				"lat": 43.669525,
+				"lon": -70.303970000001
+			},
+			{
+				"stpid": "82",
+				"stpnm": "BRIGHTON AVE + RAND RD",
+				"lat": 43.674351000001,
+				"lon": -70.321522999999
+			},
+			{
+				"stpid": "87",
+				"stpnm": "BRIGHTON AVE + ROWE AVE",
+				"lat": 43.673856,
+				"lon": -70.3182
+			},
+			{
+				"stpid": "99",
+				"stpnm": "BROWN ST + KING ST",
+				"lat": 43.680786000001,
+				"lon": -70.361423000002
+			},
+			{
+				"stpid": "104",
+				"stpnm": "BROWN ST + WALKER ST",
+				"lat": 43.68009,
+				"lon": -70.364628
+			},
+			{
+				"stpid": "1117",
+				"stpnm": "CONGRESS ST + CENTER ST",
+				"lat": 43.656861,
+				"lon": -70.25977899999901
+			},
+			{
+				"stpid": "190",
+				"stpnm": "CUMBERLAND ST + 296 CUMBERLAND ST",
+				"lat": 43.688020999999,
+				"lon": -70.359888999999
+			},
+			{
+				"stpid": "193",
+				"stpnm": "CUMBERLAND ST + BROWN ST",
+				"lat": 43.683634000001,
+				"lon": -70.353957999998
+			},
+			{
+				"stpid": "197",
+				"stpnm": "CUMBERLAND ST + PARK RD",
+				"lat": 43.686637000001,
+				"lon": -70.357837000001
+			},
+			{
+				"stpid": "251",
+				"stpnm": "FOREST AVE + CONGRESS ST",
+				"lat": 43.654894000001,
+				"lon": -70.262883999999
+			},
+			{
+				"stpid": "267",
+				"stpnm": "FOREST AVE + HIGH ST",
+				"lat": 43.658968000001,
+				"lon": -70.267346999999
+			},
+			{
+				"stpid": "274",
+				"stpnm": "FOREST AVE + PARK AVE",
+				"lat": 43.657993,
+				"lon": -70.266553000001
+			},
+			{
+				"stpid": "298",
+				"stpnm": "HANNAFORD DR + 5 HANNAFORD DR",
+				"lat": 43.676386999999,
+				"lon": -70.355148999999
+			},
+			{
+				"stpid": "305",
+				"stpnm": "IDEXX DR + EISENHOWER DR",
+				"lat": 43.662624999999,
+				"lon": -70.374931000002
+			},
+			{
+				"stpid": "329",
+				"stpnm": "MAIN ST + 140 MAIN ST",
+				"lat": 43.678013999999,
+				"lon": -70.335889
+			},
+			{
+				"stpid": "352",
+				"stpnm": "MAIN ST + 250 MAIN ST",
+				"lat": 43.679147,
+				"lon": -70.341001000002
+			},
+			{
+				"stpid": "327",
+				"stpnm": "MAIN ST + 380 MAIN ST",
+				"lat": 43.680909,
+				"lon": -70.346112000001
+			},
+			{
+				"stpid": "337",
+				"stpnm": "MAIN ST + 458 MAIN ST",
+				"lat": 43.681193999999,
+				"lon": -70.349590000002
+			},
+			{
+				"stpid": "336",
+				"stpnm": "MAIN ST + 668 MAIN ST",
+				"lat": 43.678164,
+				"lon": -70.357844
+			},
+			{
+				"stpid": "349",
+				"stpnm": "MAIN ST + 800 MAIN ST",
+				"lat": 43.676277999999,
+				"lon": -70.363781
+			},
+			{
+				"stpid": "326",
+				"stpnm": "MAIN ST + HASKELL ST",
+				"lat": 43.679711,
+				"lon": -70.353569999999
+			},
+			{
+				"stpid": "334",
+				"stpnm": "MAIN ST + MASON ST",
+				"lat": 43.680336,
+				"lon": -70.344474
+			},
+			{
+				"stpid": "442",
+				"stpnm": "MAIN ST + RIVERSIDE ST",
+				"lat": 43.67723,
+				"lon": -70.331135000001
+			},
+			{
+				"stpid": "340",
+				"stpnm": "MAIN ST + SCHOOL ST",
+				"lat": 43.678825999999,
+				"lon": -70.356046000001
+			},
+			{
+				"stpid": "346",
+				"stpnm": "MAIN ST + STROUDWATER ST",
+				"lat": 43.676756,
+				"lon": -70.361271
+			},
+			{
+				"stpid": "813",
+				"stpnm": "MAIN ST + TRAMWAY LN",
+				"lat": 43.681083999999,
+				"lon": -70.351549
+			},
+			{
+				"stpid": "348",
+				"stpnm": "MECHANIC ST + MAIN ST",
+				"lat": 43.676801,
+				"lon": -70.368710999998
+			},
+			{
+				"stpid": "388",
+				"stpnm": "MYRTLE ST + BRIDGE ST",
+				"lat": 43.684966000001,
+				"lon": -70.363879999999
+			},
+			{
+				"stpid": "389",
+				"stpnm": "MYRTLE ST + BROWN ST",
+				"lat": 43.681575999999,
+				"lon": -70.359920999999
+			},
+			{
+				"stpid": "391",
+				"stpnm": "MYRTLE ST + PRINCE ST",
+				"lat": 43.683972999999,
+				"lon": -70.362174999998
+			},
+			{
+				"stpid": "441",
+				"stpnm": "PROSPECT ST + SACO ST",
+				"lat": 43.670278999999,
+				"lon": -70.372782999999
+			},
+			{
+				"stpid": "372",
+				"stpnm": "PULSE",
+				"lat": 43.658464,
+				"lon": -70.259672999999
+			},
+			{
+				"stpid": "484",
+				"stpnm": "QUIMBY AVE + SACO ST",
+				"lat": 43.676088999999,
+				"lon": -70.371412999999
+			},
+			{
+				"stpid": "488",
+				"stpnm": "RIVERSIDE ST + 31 MAIN ST",
+				"lat": 43.679024000001,
+				"lon": -70.330787
+			},
+			{
+				"stpid": "480",
+				"stpnm": "SACO ST + 38 SACO ST",
+				"lat": 43.675986,
+				"lon": -70.371509000002
+			},
+			{
+				"stpid": "477",
+				"stpnm": "SACO ST + 86 SACO ST",
+				"lat": 43.674301,
+				"lon": -70.372029
+			},
+			{
+				"stpid": "478",
+				"stpnm": "SACO ST + EISENHOWER DR",
+				"lat": 43.664801999999,
+				"lon": -70.376389999998
+			},
+			{
+				"stpid": "475",
+				"stpnm": "SACO ST + PROSPECT ST",
+				"lat": 43.669862000001,
+				"lon": -70.373248
+			},
+			{
+				"stpid": "647",
+				"stpnm": "TERI CIR + PROSPECT ST",
+				"lat": 43.669264999999,
+				"lon": -70.367119000002
+			}
+		]
+	}
+}

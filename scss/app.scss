@@ -1,0 +1,390 @@
+@import "vars";
+@import "breakpoints";
+
+.appHeader {
+  height: $header-height;
+  padding: 0 0.5rem;
+  background-color: rgba(white, 0.9);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+
+  @include breakpoint(tablet) {
+    padding: 0 1rem;
+  }
+}
+
+.appHeader__heading {
+  margin: 0;
+  flex: 1;
+  min-width: 1px;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  letter-spacing: -0.0625rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform: translateY(0.0625rem);
+
+  @include breakpoint(tablet) {
+    letter-spacing: normal;
+    font-size: 1.25rem;
+  }
+}
+
+.appHeader__icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+
+  .busSVG {
+    display: block;
+    width: 1em;
+    height: 1em;
+  }
+
+  .busSVG__background {
+    fill: $color-dark;
+  }
+
+  .busSVG__foreground {
+    fill: white;
+  }
+
+  .busSVG__text {
+    fill: $color-dark;
+  }
+}
+
+.appHeader__text {
+  flex: 1;
+  line-height: 1;
+  padding-left: 0.25rem;
+  margin-left: 0.5rem;
+  transform: translateY(0.0625rem);
+  min-width: 1px;
+}
+
+.buses {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: calc(100% - #{$header-height});
+  display: flex;
+  flex-direction: column;
+  background-color: lighten($color-dark, 10%);
+
+  @include breakpoint(tablet) {
+    background-image: url("../img/background.png");
+    background-size: 42rem;
+  }
+
+  @include breakpoint(desktop) {
+    background-size: 58rem;
+  }
+}
+
+@keyframes bus {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bus {
+  position: relative;
+  margin: 0;
+  flex: 1 0 auto;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translate3d(0, -20%, 0);
+  animation-name: bus;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  body.body--singleBus & {
+    transform: translate3d(0, 0, 0);
+  }
+
+  @for $i from 2 to 15 {
+    &:nth-child(#{$i}) {
+      animation-delay: ($i - 1) * 0.25s;
+
+      .busDetails__ticker {
+        animation-delay: (($i - 1) * 0.25s) + 1s;
+      }
+    }
+  }
+
+  &:first-of-type {
+    border-top: none;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  &--lowPanic {
+    background-color: $color-low;
+  }
+
+  &--mediumPanic {
+    background-color: $color-medium;
+  }
+
+  &--highPanic {
+    background-color: $color-high;
+  }
+
+  &--delayedPanic {
+    background-color: $color-delay;
+  }
+}
+
+.bus__delay {
+  display: block;
+  background: $color-dark;
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.bus__layout {
+  padding: 1rem;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(mini-tablet) {
+    flex-direction: row;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 1.5rem;
+  }
+}
+
+@mixin stackedPrediction {
+  display: block;
+  text-align: center;
+}
+
+.busPrediction {
+  min-width: 1px;
+  display: flex;
+  align-items: center;
+
+  @include breakpoint(mini-tablet) {
+    @include stackedPrediction;
+    flex: 0 0 50%;
+    margin-bottom: 0;
+  }
+}
+
+@mixin stackedNumber {
+  font-size: 8rem;
+  margin-right: 0;
+}
+
+.busPrediction__number {
+  font-family: $font-display;
+  font-size: 6rem;
+  color: $color-dark;
+  line-height: 1;
+  display: block;
+  letter-spacing: -0.375rem;
+  margin-right: 0.5rem;
+
+  @include breakpoint(mini-tablet) {
+    @include stackedNumber;
+  }
+}
+
+@mixin stackedUnit {
+  font-size: 2rem;
+  margin-top: -0.75rem;
+  margin-left: 0;
+}
+
+.busPrediction__unit {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: white;
+  line-height: 1;
+  display: block;
+  margin-left: 0.5rem;
+
+  @include breakpoint(mini-tablet) {
+    @include stackedUnit;
+  }
+}
+
+.changesColor {
+  .bus--lowPanic & {
+    background-color: $color-low;
+  }
+
+  .bus--mediumPanic & {
+    background-color: $color-medium;
+  }
+
+  .bus--highPanic & {
+    background-color: $color-high;
+  }
+
+  .bus--delayedPanic & {
+    background-color: $color-delay;
+  }
+}
+
+.changesTextColor {
+  .bus--lowPanic & {
+    color: $color-low;
+  }
+
+  .bus--mediumPanic & {
+    color: $color-medium;
+  }
+
+  .bus--highPanic & {
+    color: $color-high;
+  }
+
+  .bus--delayedPanic & {
+    color: $color-dark;
+  }
+}
+
+.busDetailsLayout {
+  min-width: 1px;
+
+  @include breakpoint(mini-tablet) {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.busDetails {
+  position: relative;
+  display: block;
+  background: $color-dark;
+  border-radius: 1rem;
+  width: $bus-width;
+  padding-top: $bus-padding;
+  padding-bottom: $bus-padding;
+  margin-bottom: $bus-wheel-height - $bus-padding;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: calc(100% - #{$bus-padding});
+    width: 2rem;
+    height: $bus-wheel-height;
+    border-radius: $bus-borderRadius;
+    background: $color-dark;
+  }
+
+  &::before {
+    left: $bus-padding;
+  }
+
+  &::after {
+    right: $bus-padding;
+  }
+}
+
+.busDetails__destination {
+  display: block;
+  position: relative;
+  border-radius: $bus-borderRadius / 2;
+  line-height: 1.5rem;
+  height: 1.5rem;
+  margin-left: $bus-padding;
+  margin-right: $bus-padding;
+  margin-bottom: $bus-padding;
+  overflow: hidden;
+  background-color: white;
+}
+
+@keyframes ticker {
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.busDetails__ticker {
+  display: block;
+  position: absolute;
+  top: 0.0625rem;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-family: $font-bold;
+  transform: translate3d($ticker-width, 0, 0);
+  transform-origin: left center;
+  animation-name: ticker;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  white-space: nowrap;
+}
+
+.busDetails__route {
+  padding: $bus-padding/4;
+  display: block;
+  position: relative;
+  margin-left: $bus-padding;
+  margin-right: $bus-padding;
+  border-radius: $bus-borderRadius / 2;
+  background-color: white;
+}
+
+.busDetails__route-number {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: $color-dark;
+  font-size: 3.5rem;
+  letter-spacing: -0.125rem;
+  font-family: $font-display;
+  line-height: 1;
+  transform: translateY(0.0625rem);
+}
+
+.busDetails__lights {
+  display: block;
+  height: 1rem;
+  position: relative;
+  margin-top: 0.5rem;
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  &:before {
+    left: 1rem;
+  }
+
+  &:after {
+    right: 1rem;
+  }
+}

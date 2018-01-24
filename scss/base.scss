@@ -1,0 +1,300 @@
+@import "vars";
+@import "breakpoints";
+
+::selection {
+  color: white;
+  background: $color-brand;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+
+  @include breakpoint(tablet) {
+    font-size: 110%;
+  }
+  @include breakpoint(desktop) {
+    font-size: 120%;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'AvenirNext-Medium', sans-serif-medium, sans-serif;
+  color: $color-dark;
+  line-height: 1.5;
+
+  &.body--error {
+    background-color: $color-high;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include breakpoint(tablet) {
+      background-image: url("../img/background.png");
+      background-size: 42rem;
+    }
+
+    @include breakpoint(desktop) {
+      background-size: 58rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+a {
+  color:$color-brand;
+
+  &:focus {
+    color: white;
+    background-color: $color-brand;
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.link--light {
+    color: white;
+
+    &:focus {
+      color: $color-brand;
+      background-color: white;
+    }
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  margin: 1.5rem 0;
+}
+
+.dialog {
+  background: white;
+  border-radius: $bus-borderRadius;
+  padding: 1.5rem;
+  max-width: calc(100% - 3rem);
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 0.25rem rgba(black, 0.1);
+
+  @include breakpoint(tablet) {
+    max-width: 37.5rem;
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &.dialog--error {
+    .dialog__heading {
+      color: $color-high;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes overlayContent {
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.overlay__content {
+  background: white;
+  width: calc(100% - 2rem);
+  max-width: 37.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 0.5rem rgba(black, 0.2);
+  padding: 1.5rem;
+  text-align: center;
+  transform: translate3d(0, -50%, 0);
+  opacity: 0;
+  animation-name: overlayContent;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.icon {
+  font-size: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  color: $color-dark;
+
+  > svg {
+    display: block;
+    margin: 0 auto;
+    fill: currentcolor;
+    width: 1em;
+    height: 1em;
+  }
+
+  &.icon--small {
+    font-size: 1.25rem;
+  }
+
+  &.icon--large {
+    font-size: 4rem;
+  }
+
+  &.icon--error {
+    color: $color-high;
+  }
+
+  &.icon--success {
+    color: $color-low;
+  }
+
+  &.icon--dialog-heading {
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
+
+  &.icon--light {
+    color: white;
+  }
+}
+
+.button {
+  background: $color-brand;
+  font-family: 'AvenirNext-Medium', sans-serif;
+  font-size: 0.875rem;
+  color: white;
+  border-radius: $bus-borderRadius / 2;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.75rem;
+  line-height: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:focus {
+    box-shadow:
+      0 0 0 0.25rem $color-brand,
+      inset 0 0 0 0.125rem white;
+    outline: none;
+  }
+
+  &:hover {
+    background: darken($color-brand, 10%);
+  }
+
+  &:active,
+  &:hover:active {
+    transform: scale(0.9);
+  }
+
+  &.button--block {
+    display: block;
+    width: 100%;
+  }
+
+  &.button--large {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 3rem;
+
+    .icon {
+      transform: translateY(-0.125rem);
+    }
+  }
+
+  &.button--pushy {
+    background: $color-low;
+    color: $color-dark;
+
+    &:focus {
+      box-shadow:
+        0 0 0 0.25rem $color-low,
+        inset 0 0 0 0.125rem white;
+    }
+
+    &:hover {
+      background: lighten($color-low, 5%);
+    }
+  }
+
+  .icon {
+    transform: translateY(-0.0625rem);
+  }
+}
+
+.input {
+  border: 0.125rem solid transparent;
+  border-bottom-color: $color-delay;
+  background: white;
+  height: 3rem;
+  box-sizing: border-box;
+  line-height: 1;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: $color-dark;
+  outline: none;
+  transition: all 0.2s;
+
+  &:focus {
+    background: $color-lightBg;
+    border-bottom-color: $color-brand;
+  }
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.contentContainer {
+  max-width: 50rem;
+  margin: 0 auto;
+}

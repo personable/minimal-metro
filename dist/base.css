@@ -1,0 +1,250 @@
+::-moz-selection {
+  color: white;
+  background: #2980fa; }
+
+::selection {
+  color: white;
+  background: #2980fa; }
+
+html, body {
+  height: 100%; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%; }
+  @media only screen and (min-width: 768px) {
+    html {
+      font-size: 110%; } }
+  @media only screen and (min-width: 992px) {
+    html {
+      font-size: 120%; } }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  font-family: 'AvenirNext-Medium', sans-serif-medium, sans-serif;
+  color: #222;
+  line-height: 1.5; }
+  body.body--error {
+    background-color: #f74b3d;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    @media only screen and (min-width: 768px) {
+      body.body--error {
+        background-image: url("../img/background.png");
+        background-size: 42rem; } }
+    @media only screen and (min-width: 992px) {
+      body.body--error {
+        background-size: 58rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+
+a {
+  color: #2980fa; }
+  a:focus {
+    color: white;
+    background-color: #2980fa;
+    text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a.link--light {
+    color: white; }
+    a.link--light:focus {
+      color: #2980fa;
+      background-color: white; }
+
+h1 {
+  font-size: 3rem;
+  margin: 0; }
+
+p {
+  margin: 1.5rem 0; }
+
+.dialog {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  max-width: calc(100% - 3rem);
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1); }
+  @media only screen and (min-width: 768px) {
+    .dialog {
+      max-width: 37.5rem; } }
+  .dialog > *:first-child {
+    margin-top: 0; }
+  .dialog > *:last-child {
+    margin-bottom: 0; }
+  .dialog.dialog--error .dialog__heading {
+    color: #f74b3d; }
+
+.overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+@-webkit-keyframes overlayContent {
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@keyframes overlayContent {
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+.overlay__content {
+  background: white;
+  width: calc(100% - 2rem);
+  max-width: 37.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  text-align: center;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  opacity: 0;
+  -webkit-animation-name: overlayContent;
+  animation-name: overlayContent;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+  .overlay__content > *:first-child {
+    margin-top: 0; }
+  .overlay__content > *:last-child {
+    margin-bottom: 0; }
+
+.icon {
+  font-size: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  color: #222; }
+  .icon > svg {
+    display: block;
+    margin: 0 auto;
+    fill: currentcolor;
+    width: 1em;
+    height: 1em; }
+  .icon.icon--small {
+    font-size: 1.25rem; }
+  .icon.icon--large {
+    font-size: 4rem; }
+  .icon.icon--error {
+    color: #f74b3d; }
+  .icon.icon--success {
+    color: #2fbd48; }
+  .icon.icon--dialog-heading {
+    display: block;
+    margin: 0 auto 0.5rem; }
+  .icon.icon--light {
+    color: white; }
+
+.button {
+  background: #2980fa;
+  font-family: 'AvenirNext-Medium', sans-serif;
+  font-size: 0.875rem;
+  color: white;
+  border-radius: 0.25rem;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.75rem;
+  line-height: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .button:focus {
+    -webkit-box-shadow: 0 0 0 0.25rem #2980fa, inset 0 0 0 0.125rem white;
+    box-shadow: 0 0 0 0.25rem #2980fa, inset 0 0 0 0.125rem white;
+    outline: none; }
+  .button:hover {
+    background: #0665ea; }
+  .button:active, .button:hover:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  .button.button--block {
+    display: block;
+    width: 100%; }
+  .button.button--large {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 3rem; }
+    .button.button--large .icon {
+      -webkit-transform: translateY(-0.125rem);
+      transform: translateY(-0.125rem); }
+  .button.button--pushy {
+    background: #2fbd48;
+    color: #222; }
+    .button.button--pushy:focus {
+      -webkit-box-shadow: 0 0 0 0.25rem #2fbd48, inset 0 0 0 0.125rem white;
+      box-shadow: 0 0 0 0.25rem #2fbd48, inset 0 0 0 0.125rem white; }
+    .button.button--pushy:hover {
+      background: #38ce52; }
+  .button .icon {
+    -webkit-transform: translateY(-0.0625rem);
+    transform: translateY(-0.0625rem); }
+
+.input {
+  border: 0.125rem solid transparent;
+  border-bottom-color: #626262;
+  background: white;
+  height: 3rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #222;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  .input:focus {
+    background: #f2f2f2;
+    border-bottom-color: #2980fa; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; }
+
+.contentContainer {
+  max-width: 50rem;
+  margin: 0 auto; }

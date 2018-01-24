@@ -1,0 +1,60 @@
+{
+	"bustime-response": {
+		"prd": [
+			{
+				"tmstmp": "20170103 11:24",
+				"typ": "A",
+				"stpnm": "BRIGHTON AVE + FLEETWOOD ST",
+				"stpid": "443",
+				"vid": "1105",
+				"dstp": 2745,
+				"rt": "4",
+				"rtdd": "4",
+				"rtdir": "INBOUND",
+				"des": "Downtown Portland",
+				"prdtm": "20170103 11:27",
+				"tablockid": "402",
+				"tatripid": "21311",
+				"dly": true,
+				"prdctdn": "7",
+				"zone": ""
+			},
+			{
+				"tmstmp": "20170103 11:24",
+				"typ": "A",
+				"stpnm": "BRIGHTON AVE + FLEETWOOD ST",
+				"stpid": "443",
+				"vid": "1403",
+				"dstp": 26858,
+				"rt": "4",
+				"rtdd": "4",
+				"rtdir": "INBOUND",
+				"des": "Downtown Portland",
+				"prdtm": "20170103 11:52",
+				"tablockid": "401",
+				"tatripid": "21289",
+				"dly": false,
+				"prdctdn": "27",
+				"zone": ""
+			},
+			{
+				"tmstmp": "20170103 11:24",
+				"typ": "A",
+				"stpnm": "BRIGHTON AVE + FLEETWOOD ST",
+				"stpid": "443",
+				"vid": "1403",
+				"dstp": 26858,
+				"rt": "BRZ",
+				"rtdd": "4",
+				"rtdir": "INBOUND",
+				"des": "Downtown Portland",
+				"prdtm": "20170103 11:52",
+				"tablockid": "401",
+				"tatripid": "21289",
+				"dly": false,
+				"prdctdn": "DUE",
+				"zone": ""
+			}
+		]
+	}
+}
