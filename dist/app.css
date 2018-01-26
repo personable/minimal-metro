@@ -262,15 +262,18 @@
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
   @media only screen and (min-width: 500px) {
     .busPrediction {
-      display: block;
-      text-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
       -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
-      margin-bottom: 0; } }
+      margin: 0 1rem; } }
 
 .busPrediction__number {
   font-family: "AvenirNextCondensed-Heavy", sans-serif-black, sans-serif;
@@ -334,7 +337,8 @@
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center;
+      margin: 0 1rem; } }
 
 .busDetails {
   position: relative;

@@ -184,11 +184,12 @@
   min-width: 1px;
   display: flex;
   align-items: center;
+  text-align: center;
 
   @include breakpoint(mini-tablet) {
-    @include stackedPrediction;
+    flex-direction: column;
     flex: 0 0 50%;
-    margin-bottom: 0;
+    margin: 0 1rem; // TODO: remove when you fix autoprefixer issue
   }
 }
 
@@ -273,6 +274,7 @@
     flex: 0 0 50%;
     display: flex;
     justify-content: center;
+    margin: 0 1rem; // TODO: remove when you fix autoprefixer issue
   }
 }
 
