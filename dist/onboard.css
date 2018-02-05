@@ -43,8 +43,8 @@ body {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; } }
+          -ms-flex-align: center;
+              align-items: center; } }
   @media only screen and (min-width: 1200px) {
     .onboardingListItem {
       padding-left: 2rem;
@@ -54,7 +54,7 @@ body {
     color: #222; }
     .onboardingListItem:nth-child(even)::before {
       -webkit-box-shadow: 0 0 0 0.5rem white;
-      box-shadow: 0 0 0 0.5rem white; }
+              box-shadow: 0 0 0 0.5rem white; }
   .onboardingListItem::before {
     counter-increment: onboardingList;
     content: counter(onboardingList);
@@ -72,15 +72,15 @@ body {
     top: -1.625rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+            transform: translateX(-50%);
     z-index: 1;
     -webkit-box-shadow: 0 0 0 0.5rem #222;
-    box-shadow: 0 0 0 0.5rem #222; }
+            box-shadow: 0 0 0 0.5rem #222; }
 
 .onboardingListItem__layout {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   max-width: 27rem;
   margin: 0 auto; }
   @media only screen and (min-width: 992px) {
@@ -112,7 +112,7 @@ body {
   text-align: center; }
   .onboardingInput__input:focus ~ .onboardingInputBus {
     -webkit-transform: translate3d(0, 0, 0) scale(1.15);
-    transform: translate3d(0, 0, 0) scale(1.15);
+            transform: translate3d(0, 0, 0) scale(1.15);
     background: #2980fa; }
     .onboardingInput__input:focus ~ .onboardingInputBus .busSVG__background {
       fill: #222; }
@@ -123,7 +123,7 @@ body {
   .onboardingInput__input:focus ~ .onboardingInput__background {
     opacity: 1;
     -webkit-transform: scale(1);
-    transform: scale(1); }
+            transform: scale(1); }
 
 .onboardingInput__background {
   display: block;
@@ -136,7 +136,7 @@ body {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
   -webkit-transform: scale(0.5);
-  transform: scale(0.5);
+          transform: scale(0.5);
   background: #2980fa; }
 
 .onboarding__footer {
@@ -152,11 +152,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 6rem;
   height: 6rem;
   position: absolute;
@@ -165,11 +165,11 @@ body {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-transform: translate3d(0, 0, 0) scale(1);
-  transform: translate3d(0, 0, 0) scale(1);
+          transform: translate3d(0, 0, 0) scale(1);
   background: white;
   border-radius: 100%;
   -webkit-box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.1); }
+          box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.1); }
 
 .busSVG {
   display: block;
@@ -189,7 +189,7 @@ body {
   max-width: 15rem;
   margin: 1.5rem auto 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2);
   border-radius: 0.75rem; }
 
 .onboardingSMTT__logo {
@@ -215,18 +215,18 @@ body {
 .onboardingSMTT__stopIDnumber,
 .onboardingSMTT__stopIDtext {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   padding: 0 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .onboardingSMTT__stopIDtext {
   color: #222;
@@ -237,13 +237,13 @@ body {
   to {
     opacity: 1;
     -webkit-transform: translate3d(-50%, -52%, 0) scale(1.1);
-    transform: translate3d(-50%, -52%, 0) scale(1.1); } }
+            transform: translate3d(-50%, -52%, 0) scale(1.1); } }
 
 @keyframes numberHighlight {
   to {
     opacity: 1;
     -webkit-transform: translate3d(-50%, -52%, 0) scale(1.1);
-    transform: translate3d(-50%, -52%, 0) scale(1.1); } }
+            transform: translate3d(-50%, -52%, 0) scale(1.1); } }
 
 .onboardingSMTT__stopIDnumber {
   background: #222;
@@ -261,16 +261,16 @@ body {
     width: 70%;
     height: 90%;
     -webkit-transform: translate3d(-50%, -52%, 0) scale(0.95);
-    transform: translate3d(-50%, -52%, 0) scale(0.95);
+            transform: translate3d(-50%, -52%, 0) scale(0.95);
     opacity: 0;
     -webkit-animation-name: numberHighlight;
-    animation-name: numberHighlight;
+            animation-name: numberHighlight;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+            animation-duration: 1s;
     -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+            animation-direction: alternate;
     -webkit-animation-iteration-count: 8;
-    animation-iteration-count: 8;
+            animation-iteration-count: 8;
     -webkit-backface-visibility: hidden; }
 
 .onboardingPhone {
@@ -281,7 +281,7 @@ body {
   border-radius: 0.25rem;
   padding: 0.25rem;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2);
   position: relative; }
   .onboardingPhone::after {
     content: "";
@@ -291,9 +291,9 @@ body {
     bottom: 0;
     left: 50%;
     -webkit-transform: translate3d(-50%, -0.25rem, 0);
-    transform: translate3d(-50%, -0.25rem, 0);
+            transform: translate3d(-50%, -0.25rem, 0);
     -webkit-box-shadow: inset 0 0 0 0.125rem #e5e5e5;
-    box-shadow: inset 0 0 0 0.125rem #e5e5e5;
+            box-shadow: inset 0 0 0 0.125rem #e5e5e5;
     border-radius: 100%; }
 
 .onboardingPhone__layout {
@@ -313,7 +313,7 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0); }
+          transform: translate3d(-50%, -50%, 0); }
 
 .sampleScreenSVG__segment--accent {
   fill: #2fbd48; }
@@ -341,3 +341,5 @@ body {
   @media only screen and (min-width: 992px) {
     .logoSVG__metro {
       fill: white; } }
+
+/*# sourceMappingURL=onboard.css.map */

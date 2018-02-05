@@ -46,6 +46,15 @@
                 the <a href="http://bustimeweb.smttracker.com/bustime/map/displaymap.jsp">SMTT map</a>.
               </p>
             </section>';
+    } elseif ($obj['bustime-response']['error'][0]['msg'] === 'Invalid RTPI Data Feed parameter') {
+      echo '<section class="dialog dialog--error">
+              <h2 class="dialog__heading"><span class="icon icon--error icon--large icon--dialog-heading">';
+      include('svg/error.svg');
+      echo '</span>Well, shoot.</h2>
+              <p>
+                <strong>I think METRO might have shut us down.</strong> Maybe I violated their copyright by putting METRO in the name? Or it could be just a temporary glitch on their end. Either way, I plan on finding out, so stay tuned. 
+              </p>
+            </section>';
     } elseif (
       $obj['bustime-response']['error'][0]['msg'] === 'No arrival times' || $obj['bustime-response']['error'][0]['msg'] === 'No service scheduled'
     ) {

@@ -6,8 +6,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -19,8 +19,8 @@
 .appHeader__heading {
   margin: 0;
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   min-width: 1px;
   padding-right: 0.5rem;
   font-size: 0.875rem;
@@ -29,7 +29,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-transform: translateY(0.0625rem);
-  transform: translateY(0.0625rem); }
+          transform: translateY(0.0625rem); }
   @media only screen and (min-width: 768px) {
     .appHeader__heading {
       letter-spacing: normal;
@@ -39,13 +39,13 @@
   font-size: 2rem;
   margin-right: 0.5rem;
   -ms-flex-item-align: stretch;
-  align-self: stretch;
+      align-self: stretch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+      -ms-flex-align: center;
+          align-items: center; }
   .appHeader__icon .busSVG {
     display: block;
     width: 1em;
@@ -59,13 +59,13 @@
 
 .appHeader__text {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   line-height: 1;
   padding-left: 0.25rem;
   margin-left: 0.5rem;
   -webkit-transform: translateY(0.0625rem);
-  transform: translateY(0.0625rem);
+          transform: translateY(0.0625rem);
   min-width: 1px; }
 
 .buses {
@@ -78,8 +78,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #3c3c3c; }
   @media only screen and (min-width: 768px) {
     .buses {
@@ -93,20 +93,20 @@
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+            transform: translate3d(0, 0, 0); } }
 
 @keyframes bus {
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+            transform: translate3d(0, 0, 0); } }
 
 .bus {
   position: relative;
   margin: 0;
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   display: -webkit-box;
@@ -114,98 +114,98 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   opacity: 0;
   -webkit-transform: translate3d(0, -20%, 0);
-  transform: translate3d(0, -20%, 0);
+          transform: translate3d(0, -20%, 0);
   -webkit-animation-name: bus;
-  animation-name: bus;
+          animation-name: bus;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
+          animation-fill-mode: forwards; }
   body.body--singleBus .bus {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+            transform: translate3d(0, 0, 0); }
   .bus:nth-child(2) {
     -webkit-animation-delay: 0.25s;
-    animation-delay: 0.25s; }
+            animation-delay: 0.25s; }
     .bus:nth-child(2) .busDetails__ticker {
       -webkit-animation-delay: 1.25s;
-      animation-delay: 1.25s; }
+              animation-delay: 1.25s; }
   .bus:nth-child(3) {
     -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s; }
+            animation-delay: 0.5s; }
     .bus:nth-child(3) .busDetails__ticker {
       -webkit-animation-delay: 1.5s;
-      animation-delay: 1.5s; }
+              animation-delay: 1.5s; }
   .bus:nth-child(4) {
     -webkit-animation-delay: 0.75s;
-    animation-delay: 0.75s; }
+            animation-delay: 0.75s; }
     .bus:nth-child(4) .busDetails__ticker {
       -webkit-animation-delay: 1.75s;
-      animation-delay: 1.75s; }
+              animation-delay: 1.75s; }
   .bus:nth-child(5) {
     -webkit-animation-delay: 1s;
-    animation-delay: 1s; }
+            animation-delay: 1s; }
     .bus:nth-child(5) .busDetails__ticker {
       -webkit-animation-delay: 2s;
-      animation-delay: 2s; }
+              animation-delay: 2s; }
   .bus:nth-child(6) {
     -webkit-animation-delay: 1.25s;
-    animation-delay: 1.25s; }
+            animation-delay: 1.25s; }
     .bus:nth-child(6) .busDetails__ticker {
       -webkit-animation-delay: 2.25s;
-      animation-delay: 2.25s; }
+              animation-delay: 2.25s; }
   .bus:nth-child(7) {
     -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s; }
+            animation-delay: 1.5s; }
     .bus:nth-child(7) .busDetails__ticker {
       -webkit-animation-delay: 2.5s;
-      animation-delay: 2.5s; }
+              animation-delay: 2.5s; }
   .bus:nth-child(8) {
     -webkit-animation-delay: 1.75s;
-    animation-delay: 1.75s; }
+            animation-delay: 1.75s; }
     .bus:nth-child(8) .busDetails__ticker {
       -webkit-animation-delay: 2.75s;
-      animation-delay: 2.75s; }
+              animation-delay: 2.75s; }
   .bus:nth-child(9) {
     -webkit-animation-delay: 2s;
-    animation-delay: 2s; }
+            animation-delay: 2s; }
     .bus:nth-child(9) .busDetails__ticker {
       -webkit-animation-delay: 3s;
-      animation-delay: 3s; }
+              animation-delay: 3s; }
   .bus:nth-child(10) {
     -webkit-animation-delay: 2.25s;
-    animation-delay: 2.25s; }
+            animation-delay: 2.25s; }
     .bus:nth-child(10) .busDetails__ticker {
       -webkit-animation-delay: 3.25s;
-      animation-delay: 3.25s; }
+              animation-delay: 3.25s; }
   .bus:nth-child(11) {
     -webkit-animation-delay: 2.5s;
-    animation-delay: 2.5s; }
+            animation-delay: 2.5s; }
     .bus:nth-child(11) .busDetails__ticker {
       -webkit-animation-delay: 3.5s;
-      animation-delay: 3.5s; }
+              animation-delay: 3.5s; }
   .bus:nth-child(12) {
     -webkit-animation-delay: 2.75s;
-    animation-delay: 2.75s; }
+            animation-delay: 2.75s; }
     .bus:nth-child(12) .busDetails__ticker {
       -webkit-animation-delay: 3.75s;
-      animation-delay: 3.75s; }
+              animation-delay: 3.75s; }
   .bus:nth-child(13) {
     -webkit-animation-delay: 3s;
-    animation-delay: 3s; }
+            animation-delay: 3s; }
     .bus:nth-child(13) .busDetails__ticker {
       -webkit-animation-delay: 4s;
-      animation-delay: 4s; }
+              animation-delay: 4s; }
   .bus:nth-child(14) {
     -webkit-animation-delay: 3.25s;
-    animation-delay: 3.25s; }
+            animation-delay: 3.25s; }
     .bus:nth-child(14) .busDetails__ticker {
       -webkit-animation-delay: 4.25s;
-      animation-delay: 4.25s; }
+              animation-delay: 4.25s; }
   .bus:first-of-type {
     border-top: none; }
   .bus:last-of-type {
@@ -230,27 +230,27 @@
 .bus__layout {
   padding: 1rem;
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media only screen and (min-width: 500px) {
     .bus__layout {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row; } }
+          -ms-flex-direction: row;
+              flex-direction: row; } }
   @media only screen and (min-width: 768px) {
     .bus__layout {
       padding: 1.5rem; } }
@@ -261,18 +261,18 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center; }
   @media only screen and (min-width: 500px) {
     .busPrediction {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
       margin: 0 1rem; } }
 
 .busPrediction__number {
@@ -330,14 +330,14 @@
   @media only screen and (min-width: 500px) {
     .busDetailsLayout {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       margin: 0 1rem; } }
 
 .busDetails {
@@ -377,12 +377,12 @@
 @-webkit-keyframes ticker {
   to {
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); } }
+            transform: translate3d(-100%, 0, 0); } }
 
 @keyframes ticker {
   to {
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); } }
+            transform: translate3d(-100%, 0, 0); } }
 
 .busDetails__ticker {
   display: block;
@@ -393,17 +393,17 @@
   font-size: 0.875rem;
   font-family: "AvenirNext-Bold", sans-serif-black, sans-serif;
   -webkit-transform: translate3d(11rem, 0, 0);
-  transform: translate3d(11rem, 0, 0);
+          transform: translate3d(11rem, 0, 0);
   -webkit-transform-origin: left center;
-  transform-origin: left center;
+          transform-origin: left center;
   -webkit-animation-name: ticker;
-  animation-name: ticker;
+          animation-name: ticker;
   -webkit-animation-duration: 12s;
-  animation-duration: 12s;
+          animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
+          animation-timing-function: linear;
   white-space: nowrap; }
 
 .busDetails__route {
@@ -425,7 +425,7 @@
   font-family: "AvenirNextCondensed-Heavy", sans-serif-black, sans-serif;
   line-height: 1;
   -webkit-transform: translateY(0.0625rem);
-  transform: translateY(0.0625rem); }
+          transform: translateY(0.0625rem); }
 
 .busDetails__lights {
   display: block;
@@ -445,3 +445,5 @@
     left: 1rem; }
   .busDetails__lights:after {
     right: 1rem; }
+
+/*# sourceMappingURL=app.css.map */
