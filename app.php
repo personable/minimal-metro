@@ -33,6 +33,7 @@
     <p>Sorry! The Southern Maine Transit Tracker isn\'t responding to our request for bus info right now.</p></section>';
   } elseif ($dataError) {
     echo '<body class="body--error">';
+
     if ($obj['bustime-response']['error'][0]['msg'] === 'No data found for parameter') {
       echo '<section class="dialog dialog--error">
               <h2 class="dialog__heading"><span class="icon icon--error icon--large icon--dialog-heading">';
@@ -46,18 +47,7 @@
                 the <a href="http://bustimeweb.smttracker.com/bustime/map/displaymap.jsp">SMTT map</a>.
               </p>
             </section>';
-    } elseif ($obj['bustime-response']['error'][0]['msg'] === 'Invalid RTPI Data Feed parameter') {
-      echo '<section class="dialog dialog--error">
-              <h2 class="dialog__heading"><span class="icon icon--error icon--large icon--dialog-heading">';
-      include('svg/error.svg');
-      echo '</span>Well, shoot.</h2>
-              <p>
-                <strong>I think METRO might have shut us down.</strong> Maybe I violated their copyright by putting METRO in the name? Or it could be just a temporary glitch on their end. Either way, I plan on finding out, so stay tuned. 
-              </p>
-            </section>';
-    } elseif (
-      $obj['bustime-response']['error'][0]['msg'] === 'No arrival times' || $obj['bustime-response']['error'][0]['msg'] === 'No service scheduled'
-    ) {
+    } elseif ($obj['bustime-response']['error'][0]['msg'] === 'No arrival times') {
       echo '<section class="dialog dialog--error">
               <h2 class="dialog__heading"><span class="icon icon--error icon--large icon--dialog-heading">';
       include('svg/error.svg');
@@ -71,11 +61,33 @@
                 </button>
               </p>
               <p>
-                <strong>METRO\'s not reporting any buses approaching your stop within the next 30 minutes or so.</strong>
-                If this doesn\'t seem right, <a href="http://gpmetrobus.net/">check the schedule</a> to
-                make sure your route is still in service for the day.
+                <strong>This route is still in service for the day, but METRO\'s not reporting any buses approaching your stop within the next 30 minutes or so.</strong>
+                If this doesn\'t seem right, <a href="http://gpmetrobus.net/">check the schedule</a>.
               </p>
-              <p><a href="stop.php">Check another stop number</a></p>
+              <p>Or <a href="stop.php">check another stop number</a></p>
+            </section>';
+    } elseif ($obj['bustime-response']['error'][0]['msg'] === 'No service scheduled') {
+      echo '<section class="dialog dialog--error">
+              <h2 class="dialog__heading"><span class="icon icon--error icon--large icon--dialog-heading">';
+      include('svg/error.svg');
+      echo '</span>No shirt, no shoes, no bus service</h2>
+              <p><strong>Looks like service is over for the day for your stop.</strong></p>
+              <p>If this doesn\'t seem right, <a href="http://gpmetrobus.net/">check the schedule</a> to confirm.</p>
+              <p>Or <a href="stop.php">check another stop number</a>.</p>
+            </section>';
+    } else {
+      echo '<section class="dialog dialog--error">
+              <h2 class="dialog__heading"><span class="icon icon--error icon--large icon--dialog-heading">';
+      include('svg/error.svg');
+      echo '</span>Well, shoot</h2>
+              <p>
+                <strong>We\'re getting an error message from the METRO/SMTT data feed.</strong>
+              </p>
+              <p>
+                This is likely caused by an outage or problem with the SMTT servers that kindly provide us with free bus tracking info.
+                In the meantime, please <a href="http://gpmetrobus.net/">check the schedule</a> to see when your bus is supposed to arrive.
+                You know, like you did every day before 2016 :)
+              </p>
             </section>';
     }
   } else {
