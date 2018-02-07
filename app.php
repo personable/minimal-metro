@@ -61,10 +61,9 @@
                 </button>
               </p>
               <p>
-                <strong>This route is still in service for the day, but METRO\'s not reporting any buses approaching your stop within the next 30 minutes or so.</strong>
-                If this doesn\'t seem right, <a href="http://gpmetrobus.net/">check the schedule</a>.
+                This route is still in service for the day, <strong>but no buses are approaching your stop within the next 30 minutes</strong>.
               </p>
-              <p>Or <a href="stop.php">check another stop number</a></p>
+              <p><a href="http://gpmetrobus.net/">Check the schedule</a> | <a href="stop.php">Check another stop number</a></p>
             </section>';
     } elseif ($obj['bustime-response']['error'][0]['msg'] === 'No service scheduled') {
       echo '<section class="dialog dialog--error">
@@ -79,7 +78,7 @@
       echo '<section class="dialog dialog--error">
               <h2 class="dialog__heading"><span class="icon icon--error icon--large icon--dialog-heading">';
       include('svg/error.svg');
-      echo '</span>Well, shoot</h2>
+      echo '</span>Well, shoot.</h2>
               <p>
                 <strong>We\'re getting an error message from the METRO/SMTT data feed.</strong>
               </p>
